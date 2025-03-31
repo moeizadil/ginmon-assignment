@@ -1,0 +1,45 @@
+export const answers: Record<number, { id: string; text: string; description: string }[]> = {
+  1: [
+    { id: "a", text: "A JavaScript framework", description: "Incorrect" },
+    { id: "b", text: "A UI library", description: "Correct!" },
+    { id: "c", text: "A backend framework", description: "Incorrect" },
+    { id: "d", text: "None of the above", description: "Incorrect" },
+    { id: "e", text: "A CSS framework", description: "Incorrect" },
+    { id: "f", text: "An HTML preprocessor", description: "Incorrect" },
+    { id: "g", text: "A mobile framework", description: "Incorrect" },
+  ],
+  2: [
+    { id: "a", text: "A mobile framework", description: "Correct!" },
+    { id: "b", text: "A database", description: "Incorrect" },
+    { id: "c", text: "A CSS preprocessor", description: "Incorrect" },
+    { id: "d", text: "An AI model", description: "Incorrect" },
+    { id: "e", text: "An API service", description: "Incorrect" },
+    { id: "f", text: "A cloud storage system", description: "Incorrect" },
+  ],
+  3: [
+    { id: "a", text: "A package manager", description: "Incorrect" },
+    { id: "b", text: "A module bundler", description: "Correct!" },
+    { id: "c", text: "A testing framework", description: "Incorrect" },
+    { id: "d", text: "A deployment tool", description: "Incorrect" },
+    { id: "e", text: "A security tool", description: "Incorrect" },
+    { id: "f", text: "A UI framework", description: "Incorrect" },
+  ],
+  4: [
+    { id: "a", text: "A front-end framework", description: "Incorrect" },
+    { id: "b", text: "A JavaScript library", description: "Incorrect" },
+    { id: "c", text: "A strongly typed superset of JavaScript", description: "Correct!" },
+    { id: "d", text: "A database management system", description: "Incorrect" },
+  ],
+  5: [
+    { id: "a", text: "A syntax extension for JavaScript", description: "Correct!" },
+    { id: "b", text: "A CSS framework", description: "Incorrect" },
+    { id: "c", text: "A Node.js library", description: "Incorrect" },
+    { id: "d", text: "A type-checking tool", description: "Incorrect" },
+  ],
+  6: [
+    { id: "a", text: "A way to store data in React components", description: "Correct!" },
+    { id: "b", text: "A method for handling API requests", description: "Incorrect" },
+    { id: "c", text: "A React component", description: "Incorrect" },
+    { id: "d", text: "A JavaScript object", description: "Partially correct" },
+  ],
+};

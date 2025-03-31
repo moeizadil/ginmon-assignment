@@ -12,6 +12,9 @@ SOLUTION :
 - Created App using => npx create-expo-app@latest ginmon-assignment --template expo-template-blank-typescript
 - Installed these packages =>  npx expo install react-dom react-native-web
 
+
 - Installed expo router => npm install expo-router (TO USE FILE BASED ROUTING THAT EXPO PROVIDES)
 - Changed Folder structure that can support file based routing src->app->_layout.tsx , moved App.tsx under -src->app folder
 - Made components folder and created genericButton component so I can use it further   
+
+- Made Main Screen , On which I can show 2 Cards i- Question Card ii- Answer Card

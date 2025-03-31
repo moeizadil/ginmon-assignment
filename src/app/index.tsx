@@ -1,8 +1,8 @@
 import { StatusBar } from "expo-status-bar";
 import {  Text, View } from "react-native";
 import { useRouter } from "expo-router";
-import GenericButton from "../../components/genericButton";
-import { styles } from "../constants/style";
+import GenericButton from "../components/genericButton";
+import { indexStyles } from "../styles/indexStyles";
 
 export default function App() {
   const router = useRouter();
@@ -10,8 +10,8 @@ export default function App() {
     console.log("Button Pressed on Main Screen",router);
     router.push("/MainScreen")  };
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>Ginmon Assignment Main Screen</Text>
+    <View style={indexStyles.container}>
+      <Text style={indexStyles.text}>Ginmon Assignment for Frontend</Text>
       <GenericButton name="Start Now" onPress={handleButtonPress} />
       <StatusBar style="auto" />
     </View>
