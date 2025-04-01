@@ -1,7 +1,7 @@
 import React from "react";
 import { TouchableOpacity, Text, StyleSheet, GestureResponderEvent  } from "react-native";
 
-interface GenericButtonProps {
+type GenericButtonProps ={
     name: string;
     onPress?: (event: GestureResponderEvent) => void; // onPress function type
     style?: object;

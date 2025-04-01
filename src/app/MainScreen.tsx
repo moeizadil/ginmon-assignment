@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { View, ScrollView } from "react-native";
+import { View, ScrollView, Text } from "react-native";
 import { useMediaQuery } from "react-responsive";
 import QuestionCard from "../components/QuestionCard";
 import AnswerCard from "../components/AnswerCard";
@@ -9,10 +9,15 @@ import { mainScreenStyles } from "../styles/mainScreenStyles";
 
 const MainScreen = () => {
   const [selectedQuestion, setSelectedQuestion] = useState(questions[0].id);
-  const isDesktop = useMediaQuery({ minWidth: 700 });
+  const isDesktop =  useMediaQuery({ query: '(min-width: 700px)' })
+  console.log("isDesktop", isDesktop);
 
   return (
     <View style={[mainScreenStyles.container, isDesktop && mainScreenStyles.desktopContainer]}>
+        {/* Question Count Display */}
+        <Text style={mainScreenStyles.questionNumber}>
+        Q{selectedQuestion} of {questions.length}
+      </Text>
       {/* Question List */}
       <ScrollView horizontal style={{ marginBottom: 10 }}>
         {questions.map((q) => (

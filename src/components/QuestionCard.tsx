@@ -1,7 +1,7 @@
 import { View, Text, TouchableOpacity } from "react-native";
 import { questionStyles } from "../styles/questionStyles";
 
-interface Props {
+type Props = {
   question: { id: number; text: string; description: string };
   onSelect: (id: number) => void;
   isSelected: boolean;
