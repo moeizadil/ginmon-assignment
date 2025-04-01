@@ -17,7 +17,6 @@ export const answerStyles = StyleSheet.create({
     width: "100%",
     alignSelf: "stretch",
   },
-  // New style to visually indicate selection
   selectedAnswerCard: {
     borderColor: "blue",
     borderWidth: 2,

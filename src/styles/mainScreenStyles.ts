@@ -1,4 +1,3 @@
-// mainScreenStyles.ts
 import { StyleSheet } from "react-native";
 import { scale, verticalScale, moderateScale } from "react-native-size-matters";
 
@@ -35,7 +34,7 @@ export const mainScreenStyles = (isDesktop: boolean) =>
       alignSelf: "flex-start",
     },
     questionScroll: {
-      // On mobile we scroll horizontally, on desktop use vertical scroll.
+      // ...
     },
     answerSection: {
       flex: 1,
