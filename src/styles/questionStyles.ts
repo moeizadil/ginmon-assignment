@@ -7,7 +7,7 @@ export const questionStyles = StyleSheet.create({
     backgroundColor: "#ddd",
     margin: verticalScale(6),
     borderRadius: scale(8),
-    height: verticalScale(80),
+    height: verticalScale(50),
   },
   selectedQuestionCard: {
     backgroundColor: "#c96",
