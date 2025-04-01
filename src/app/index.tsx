@@ -11,7 +11,7 @@ export default function App() {
     router.push("/MainScreen")  };
   return (
     <View style={indexStyles.container}>
-      <Text style={indexStyles.text}>Ginmon Assignment for Frontend</Text>
+      <Text style={indexStyles.text}>Ginmon Assignment for Frontend 123</Text>
       <GenericButton name="Start Now" onPress={handleButtonPress} />
       <StatusBar style="auto" />
     </View>

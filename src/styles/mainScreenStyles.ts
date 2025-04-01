@@ -1,25 +1,50 @@
+// mainScreenStyles.ts
 import { StyleSheet } from "react-native";
+import { scale, verticalScale, moderateScale } from "react-native-size-matters";
 
-export const mainScreenStyles = StyleSheet.create({
-  container: {
-    flex: 1, // Allow content to take full height
-    padding: 20,
-    alignItems: "center",
-  },
-  desktopContainer: {
-    width: "60%",
-    alignSelf: "center",
-  },
-  questionNumber: {
-    fontSize: 14,
-    fontWeight: "bold",
-    color: "#fff", // White text for contrast
-    backgroundColor: "#007bff", // Blue background for visibility
-    paddingVertical: 4,
-    paddingHorizontal: 10,
-    borderRadius: 10,
-    alignSelf: "flex-start", // Aligns to the left
-    marginBottom: 5, // Space before question text
-  },
-
-});
+export const mainScreenStyles = (isDesktop: boolean) =>
+  StyleSheet.create({
+    container: {
+      flex: 1,
+      padding: scale(20),
+      flexDirection: isDesktop ? "row" : "column",
+      ...(isDesktop && {
+        width: "80%",
+        alignSelf: "center",
+      }),
+    },
+    questionSection: {
+      ...(isDesktop
+        ? {
+            width: "40%",
+            marginRight: scale(10),
+          }
+        : {
+            marginBottom: verticalScale(10),
+          }),
+    },
+    questionNumber: {
+      fontSize: moderateScale(14),
+      fontWeight: "bold",
+      color: "#fff",
+      backgroundColor: "#007bff",
+      paddingVertical: verticalScale(4),
+      paddingHorizontal: scale(10),
+      borderRadius: scale(10),
+      marginBottom: verticalScale(5),
+      alignSelf: "flex-start",
+    },
+    questionScroll: {
+      // On mobile we scroll horizontally, on desktop use vertical scroll.
+    },
+    answerSection: {
+      flex: 1,
+      ...(isDesktop && {
+        width: "60%",
+        marginLeft: scale(10),
+      }),
+    },
+    answerScroll: {
+      flexGrow: 1,
+    },
+  });

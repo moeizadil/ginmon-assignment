@@ -1,27 +1,33 @@
 import { StyleSheet } from "react-native";
+import { scale, verticalScale, moderateScale } from "react-native-size-matters";
 
 export const answerStyles = StyleSheet.create({
   optionLetter: {
-    fontSize: 18,
+    fontSize: moderateScale(18),
     fontWeight: "bold",
-    color: "#ff5733", // ✅ Different color for option letter
-    marginRight: 5, // ✅ Adds spacing between "a)" and answer text
+    color: "#ff5733",
+    marginRight: scale(5),
   },
   answerCard: {
-    paddingHorizontal: 200,
-    padding :15,
+    paddingHorizontal: scale(20),
+    padding: verticalScale(15),
     backgroundColor: "#ddd",
-    marginVertical: 10,
-    borderRadius: 20,
-    width: "100%", // ✅ Makes the card take 90% of the screen width
-    alignSelf: "stretch", // ✅ Centers the card in the parent container
+    marginVertical: verticalScale(10),
+    borderRadius: scale(20),
+    width: "100%",
+    alignSelf: "stretch",
+  },
+  // New style to visually indicate selection
+  selectedAnswerCard: {
+    borderColor: "blue",
+    borderWidth: 2,
   },
   answerText: {
-    fontSize: 14,
+    fontSize: moderateScale(14),
     fontWeight: "bold",
   },
   answerDescription: {
-    fontSize: 12,
+    fontSize: moderateScale(12),
     color: "gray",
   },
 });
