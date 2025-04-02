@@ -13,7 +13,6 @@ type BaseMainScreenProps = {
 
 const BaseMainScreen = ({ styles, isDesktop }: BaseMainScreenProps) => {
   const [selectedQuestion, setSelectedQuestion] = useState(questions[0].id);
-  // New state for the selected answer row index (initialize with a default value, e.g., 0)
   const [selectedAnswerIndex, setSelectedAnswerIndex] = useState<number>(0);
 
   return (

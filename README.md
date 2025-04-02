@@ -18,3 +18,12 @@ SOLUTION :
 - Made components folder and created genericButton component so I can use it further   
 
 - Made Main Screen , On which I can show 2 Cards i- Question Card ii- Answer Card
+
+- Made  components QuestionCard, AnswerCArd, so I can map thorugh and show the cards on screen 
+
+- Data folder -> To have hardcoded dummy data 
+- styles folder to have styles classes , (seperate for each component/screen)
+-Used react-reactive to determine pixels using hook (useMediaQuery) so I come to know whether it is desktop or mobile  
+- Conditonal rendering after getting know booolean value of IsDesktop
+- Made BaseMainScreen , all the logic to show the cards are there, child components(AnswerCard, QuestionCard were also present  there)
+- USed react-native-size-matters to dynamically allocate the percentages of width and height to the properties , so reactiveness can be achieved.
